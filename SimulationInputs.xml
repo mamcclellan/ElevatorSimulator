@@ -1,0 +1,11 @@
+<Inputs>	
+	<Floors>21</Floors>
+	<Elevators>3</Elevators>
+	<ElevatorCapacity>8</ElevatorCapacity>
+	<TimeBetweenFloors>500</TimeBetweenFloors>
+	<DoorOperationTime>500</DoorOperationTime>
+	<ElevatorIdleTime>15000</ElevatorIdleTime>
+	<PersonsPerMinute>15</PersonsPerMinute>
+	<DefaultElevatorFloor>1</DefaultElevatorFloor>
+	<SimulationDuration>1</SimulationDuration>
+</Inputs>
