@@ -1,40 +1,28 @@
-Elevator Simulator Final Implementation README
+# Elevator Simulator
+
+This is a simple simulator that creates a building with a user-specified number of floors and elevators, and then creates a user-specified number of random people per minute for a certain number of minutes for the elevators to take to their destinations. There is a simple GUI for the user to specify simulation inputs. Once the user hits start, the events appear as simple timestamped text notifications in the Standard Output as they occur. 
+
+This is not a demonstration of algorithms like many other identically-named projects on Github; my elevator algorithm is a mess and I'm surprised it works. This is much more of a demonstration of thread management in Java. 
+
+## Getting Started
+
+Pull into your favorite Java IDE and run from there.
+
+### Prerequisites
+
+Java SDK and JDK 8
+
+## Built With
+
+* NetBeans
+* Java 8
+* JavaFX
 
 
+## Authors
 
-Author: Michael McClellan
+* **Michael McClellan** 
 
+## License
 
-
-What it is:
-
-	
-
-This is a simulation of a building with a number of elevators that react to the real-time
- creation of people on random floors of the building with a random destination. The 
-simulation creates people at a specified rate for a specified number of minutes, and the
- multi-threaded elevators react to take them to their destinations. Once all created
-	people have arrived at their proper floors, the elevators return to the first floor and 
-the simulation ends, printing to the console information pertaining to the average wait
- and ride times of each person.
-	
-
-
-
-
-Input directions:
-
-	
-
-Open up SimulationInputs.xml to edit the relevant fields between the XML braces. 
-
-	
-All inputs must be integers.
-	
-
-
-Design:
-
-	The algs package contains a simulation outputter that prints the final results of the simulation, as well
-as an elevator controller delegate that decides which elevator to send to a floor request. My design doesn not
-use a separate pending request delegate, since pending requests are reprocessed each time an elevator goes idle.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
